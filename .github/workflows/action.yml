@@ -1,11 +1,11 @@
 name: Using Actions
 
-on :
+on : workflow_dispatch
   #push:
   #schedule:
   #  - cron: "0/5 * * * *"
-  pull_request:
-    types: [closed, assigned, opened, reopened]
+  #pull_request:
+  #  types: [closed, assigned, opened, reopened]
 
 
 jobs:
