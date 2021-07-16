@@ -1,7 +1,14 @@
 name: Using Actions
 
-on : workflow_dispatch
-  #push:
+on : 
+  push:
+    branches:
+      - master
+      - 'feature/*'
+      - 'feature/**'
+      - '!updates'
+    tags:
+      - v1.*
   #schedule:
   #  - cron: "0/5 * * * *"
   #pull_request:
